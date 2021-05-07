@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo -n "Enter File Name That You Want To Create : "
+read -r file
+touch $file.sh
+echo "#!/bin/bash -x" > $file.sh
+echo "" >> $file.sh
+echo "#Date of Creation : `date`" >> $file.sh
+echo "#Created By : Dhiraj" >> $file.sh
