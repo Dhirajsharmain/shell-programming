@@ -9,10 +9,20 @@ num3=$((( RANDOM % 900 )+100))
 num4=$((( RANDOM % 900 )+100))
 num5=$((( RANDOM % 900 )+100))
 
-if [ $num1 -gt $num2 ] && [ $num1 -gt $num3 ] && [ $num1 -gt $num4 ] && [ $num1 -gt $num5 ] 
+if [ $num1 -gt $num2 ]
 then
-	if [ ] 
-	echo "$num1 is the maximum number"
+	if [ $num1 -gt $num3 ]
+	then
+		if [ $num1 -gt $num4 ]
+		then
+			if [ $num1 -gt $num5 ]
+			then
+				echo "$num1 is maximum number"
+			else
+			fi
+		else
+		fi
+	else
+	fi
 else
-	
 fi
