@@ -29,5 +29,3 @@ else
    echo "$result4 is maximum"
 fi
 
-
-

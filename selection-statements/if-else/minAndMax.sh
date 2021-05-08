@@ -9,13 +9,19 @@ num3=$((( RANDOM % 900 )+100))
 num4=$((( RANDOM % 900 )+100))
 num5=$((( RANDOM % 900 )+100))
 
-if [ $num1 -gt $num2 ] && [ $num1 -gt $num3 ]
+if [ $num1 -gt $num2 ] && [ $num1 -gt $num3 ] && [ $num1 -gt $num4 ] && [ $num1 -gt $num5 ]
 then
-    echo $num1
-elif [ $num2 -gt $num1 ] && [ $num2 -gt $num3 ]
+   echo "$num1 is maximum"
+elif [ $num2 -gt $num3 ] && [ $num2 -gt $num3 ] && [ $num2 -gt $num3 ]
 then
-    echo $num2
+   echo "$num2 if maximum"
+elif [ $num3 -gt $num4 ] && [ $num3 -gt $num5 ]
+then
+   echo "$num3 is maximum"
+elif [ $num4 -gt $num5 ]
+then
+   echo "$num4 is maximum"
 else
-    echo $num3
+   echo "$num5 is maximum"
 fi
 
