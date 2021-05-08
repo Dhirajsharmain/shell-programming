@@ -16,56 +16,18 @@ echo "$c + $a / $b = $result3"
 result4=$(($a * $b + $c))
 echo "$a * $b + $c = $result4"
 
-if [ $result1 -gt $result2 ]
+if [$result1 -gt $result2] && [$result1 -gt $result3] && [$result1 -gt $result4]
 then
-	echo "$result1 -gt $result2"
-elif [ $result1 -gt $result3 ]
+   echo "$result is maximum"
+elif [$result2 -gt $result3] && [$result2 -gt $result3]
 then
-	echo "$result1 -gt $result3"
-elif [ $result1 -gt $result4 ]
+   echo "$result2 if maximum"
+elif [$result3 -gt $result4]
 then
-	echo "$result1 -gt $result4"
+   echo "$result3 is maximum"
 else
-	echo "$result1 is minimum"
+   echo "$result4 is maximum"
 fi
 
 
-if [ $result2 -gt $result1 ]
-then
-   echo "$result2 -gt $result1"
-elif [ $result2 -gt $result3 ]
-then
-   echo "$result2 -gt $result3"
-elif [ $result2 -gt $result4 ]
-then
-   echo "$result2 -gt $result4"
-else
-   echo "$result2 is minimum"
-fi
-
-if [ $result3 -gt $result1 ]
-then
-   echo "$result3 -gt $result1"
-elif [ $result3 -gt $result2 ]
-then
-   echo "$result3 -gt $result2"
-elif [ $result3 -gt $result4 ]
-then
-   echo "$result3 -gt $result4"
-else
-   echo "$result3 is minimum"
-fi
-
-if [ $result4 -gt $result1 ]
-then
-   echo "$result4 -gt $result1"
-elif [ $result4 -gt $result2 ]
-then
-   echo "$result4 -gt $result2"
-elif [ $result4 -gt $result3 ]
-then
-   echo "$result4 -gt $result3"
-else
-   echo "$result4 is minimum"
-fi
 
