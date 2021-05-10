@@ -12,18 +12,22 @@ read -p "Enter the value you want to convert : " num2
 
 if [ $num -ge 1 ] && [ $num -le 4 ]
 then
-    case $num in
+	case $num in
 		1)
 			val=12
+			result=$(($Num*$val))
 		;;
 		2)
-			val=0.083333
+			val=12
+			result=$(($Num/$val))
 		;;
 		3)
-			val=3.24084
+			val=0.3048
+			result=$(($Num*$val))
 		;;
 		4)
-			val=3.24084
+			val=0.3048s
+			result=$(($Num/$val))
 		;;
 	esac
 else
