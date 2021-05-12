@@ -12,7 +12,7 @@ read -p "Enter the value you want to convert : " num2
 
 if [ $num -ge 1 ] && [ $num -le 4 ]
 then
-    case $num in
+	case $num in
 		1)
 			val=12
 			result=$(($Num*$val))
@@ -33,5 +33,4 @@ then
 else
     echo "Invalid Selection"
 fi
-    
-    echo Answer is : $result
+
