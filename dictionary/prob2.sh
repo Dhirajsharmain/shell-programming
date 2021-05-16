@@ -7,40 +7,40 @@ select_month=$(( 1+($RANDOM%$divisor) ))
 
 case $select_month in
 	1)
-	month="January"
+		month="January"
 	;;
 	2)
-	month="February"
+		month="February"
 	;;
 	3)
-	month="March"
+		month="March"
 	;;
-        4)
-	month="April"
+    4)
+		month="April"
 	;;
 	5)
-	month="May"
+		month="May"
 	;;
 	6)
-	month="June"
+		month="June"
 	;;
 	7)
-	month="July"
+		month="July"
 	;;
-        8)
-	month="August"
+    8)
+		month="August"
 	;;
 	9)
-	month="September"
+		month="September"
 	;;
 	10)
-	month="October"
+		month="October"
 	;;
 	11)
-	month="November"
+		month="November"
 	;;
 	12)
-	month="December"
+		month="December"
 	;;
 esac
 
@@ -54,7 +54,7 @@ do
 	then
 		over1=1
 		while (( $over1!=0 ))
-                do
+        do
 			sameMonths[$j]="Individual"$i" "
 			j=$(( $j+1 ))
 			over1=0
