@@ -61,5 +61,4 @@ do
 		done
 	fi
 done
-echo -n "Individuals having birthdays on $month are: "
-echo ${sameMonths[@]}
+echo -n "Individuals having birthdays on $month are: ${sameMonths[@]} " 
