@@ -15,7 +15,7 @@ case $select_month in
 	3)
 		month="March"
 	;;
-    4)
+	4)
 		month="April"
 	;;
 	5)
@@ -27,7 +27,7 @@ case $select_month in
 	7)
 		month="July"
 	;;
-    8)
+	8)
 		month="August"
 	;;
 	9)
@@ -44,7 +44,7 @@ case $select_month in
 	;;
 esac
 
-j=0
+temp=0
 for (( i=1;i<=50;i=$i+1 ))
 do
 	divisor1=$(( 12-1+1 ))
@@ -55,8 +55,8 @@ do
 		over1=1
 		while (( $over1!=0 ))
         do
-			sameMonths[$j]="Individual"$i" "
-			j=$(( $j+1 ))
+			sameMonths[$temp]="Individual"$i" "
+			temp=$(( $temp+1 ))
 			over1=0
 		done
 	fi
