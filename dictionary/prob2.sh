@@ -2,8 +2,8 @@
 
 declare -A sameMonths
 
-divisor=$(( 12-1+1 ))
-select_month=$(( 1+($RANDOM%$divisor) ))
+
+select_month=$(( 1+($RANDOM%12) ))
 
 case $select_month in
 	1)
@@ -47,17 +47,16 @@ esac
 temp=0
 for (( i=1;i<=50;i=$i+1 ))
 do
-	divisor1=$(( 12-1+1 ))
-	birth_month=$(( 1+($RANDOM%$divisor1) ))
+	birth_month=$(( 1+($RANDOM%12) ))
 
 	if (( $birth_month==$select_month ))
 	then
-		over1=1
-		while (( $over1!=0 ))
+		temp1=1
+		while (( $temp1!=0 ))
         do
 			sameMonths[$temp]="Individual"$i" "
 			temp=$(( $temp+1 ))
-			over1=0
+			temp1=0
 		done
 	fi
 done
